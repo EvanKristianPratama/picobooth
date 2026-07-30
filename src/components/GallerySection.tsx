@@ -5,175 +5,175 @@ import { ArrowUpRight } from 'lucide-react';
 gsap.registerPlugin();
 
 const mosaicTiles = [
-  // 17 Total Photos from /public/gallery/
+  // 17 Photos safely positioned inside canvas boundaries - 100% Unclipped
   {
     id: 1,
     src: '/gallery/IMG_4280 2.PNG',
-    pos: 'top-2 left-[2%] sm:left-[6%]',
-    size: 'w-28 sm:w-44',
+    pos: 'top-[8%] left-[2%] sm:left-[5%]',
+    size: 'w-24 sm:w-36',
     z: 'z-10',
-    floatX: -18,
-    floatY: -22,
-    rot: -5
+    floatX: -14,
+    floatY: -16,
+    rot: -4
   },
   {
     id: 2,
     src: '/gallery/IMG_4281.PNG',
-    pos: 'top-0 right-[2%] sm:right-[6%]',
-    size: 'w-32 sm:w-44',
+    pos: 'top-[8%] right-[2%] sm:right-[5%]',
+    size: 'w-28 sm:w-38',
     z: 'z-20',
-    floatX: 20,
-    floatY: -24,
-    rot: 4
+    floatX: 16,
+    floatY: -18,
+    rot: 3
   },
   {
     id: 3,
     src: '/gallery/IMG_4282.PNG',
-    pos: 'top-[22%] left-[1%] sm:left-[3%]',
-    size: 'w-28 sm:w-40',
+    pos: 'top-[32%] left-[1%] sm:left-[3%]',
+    size: 'w-24 sm:w-36',
     z: 'z-15',
-    floatX: -24,
-    floatY: 18,
-    rot: 6
+    floatX: -18,
+    floatY: 14,
+    rot: 5
   },
   {
     id: 4,
     src: '/gallery/IMG_4283.PNG',
-    pos: 'top-[25%] right-[1%] sm:right-[4%]',
-    size: 'w-32 sm:w-44',
+    pos: 'top-[34%] right-[1%] sm:right-[3%]',
+    size: 'w-28 sm:w-38',
     z: 'z-25',
-    floatX: 22,
-    floatY: 20,
-    rot: -4
+    floatX: 18,
+    floatY: 16,
+    rot: -3
   },
   {
     id: 5,
     src: '/gallery/IMG_4284.PNG',
-    pos: 'bottom-[6%] left-[2%] sm:left-[5%]',
-    size: 'w-32 sm:w-44',
+    pos: 'bottom-[10%] left-[2%] sm:left-[4%]',
+    size: 'w-28 sm:w-38',
     z: 'z-30',
-    floatX: -15,
-    floatY: 25,
+    floatX: -12,
+    floatY: 18,
     rot: 3
   },
   {
     id: 6,
     src: '/gallery/IMG_4285.PNG',
-    pos: 'bottom-[4%] right-[2%] sm:right-[5%]',
-    size: 'w-32 sm:w-44',
+    pos: 'bottom-[8%] right-[2%] sm:right-[4%]',
+    size: 'w-28 sm:w-38',
     z: 'z-10',
-    floatX: 18,
-    floatY: -20,
-    rot: -6
+    floatX: 14,
+    floatY: -15,
+    rot: -4
   },
   {
     id: 7,
     src: '/gallery/collage-SESS-4604D05B.png',
-    pos: 'top-4 left-[24%] sm:left-[28%]',
-    size: 'w-24 sm:w-36',
+    pos: 'top-[10%] left-[22%] sm:left-[25%]',
+    size: 'w-20 sm:w-32',
     z: 'z-20',
-    floatX: -26,
-    floatY: -18,
-    rot: 4
+    floatX: -18,
+    floatY: -14,
+    rot: 3
   },
   {
     id: 8,
     src: '/gallery/collage-SESS-543B1A7A (1).png',
-    pos: 'top-2 right-[24%] sm:right-[28%]',
-    size: 'w-24 sm:w-36',
+    pos: 'top-[10%] right-[22%] sm:right-[25%]',
+    size: 'w-20 sm:w-32',
     z: 'z-15',
-    floatX: 24,
-    floatY: 22,
-    rot: -3
+    floatX: 18,
+    floatY: 16,
+    rot: -2
   },
   {
     id: 9,
     src: '/gallery/collage-SESS-57B583C8.png',
-    pos: 'bottom-[4%] left-[24%] sm:left-[28%]',
-    size: 'w-28 sm:w-36',
+    pos: 'bottom-[10%] left-[22%] sm:left-[25%]',
+    size: 'w-22 sm:w-32',
     z: 'z-10',
-    floatX: 15,
-    floatY: -25,
-    rot: 5
+    floatX: 12,
+    floatY: -18,
+    rot: 4
   },
   {
     id: 10,
     src: '/gallery/collage-SESS-763AA4D9.png',
-    pos: 'bottom-[2%] right-[24%] sm:right-[28%]',
-    size: 'w-28 sm:w-36',
+    pos: 'bottom-[8%] right-[22%] sm:right-[25%]',
+    size: 'w-22 sm:w-32',
     z: 'z-20',
-    floatX: -20,
-    floatY: 20,
-    rot: -5
+    floatX: -15,
+    floatY: 15,
+    rot: -4
   },
   {
     id: 11,
     src: '/gallery/collage-SESS-8A231389.png',
-    pos: 'bottom-[25%] left-[14%] sm:left-[18%]',
-    size: 'w-28 sm:w-36',
+    pos: 'bottom-[30%] left-[12%] sm:left-[15%]',
+    size: 'w-22 sm:w-32',
     z: 'z-25',
-    floatX: -16,
-    floatY: -20,
+    floatX: -12,
+    floatY: -15,
     rot: 2
   },
   {
     id: 12,
     src: '/gallery/collage-SESS-8BC8DD36.png',
-    pos: 'bottom-[25%] right-[14%] sm:right-[18%]',
-    size: 'w-28 sm:w-36',
+    pos: 'bottom-[30%] right-[12%] sm:right-[15%]',
+    size: 'w-22 sm:w-32',
     z: 'z-20',
-    floatX: 20,
-    floatY: -16,
-    rot: -4
+    floatX: 15,
+    floatY: -12,
+    rot: -3
   },
   {
     id: 13,
     src: '/gallery/collage-SESS-A4276AD3.png',
-    pos: 'top-[35%] left-[16%] sm:left-[20%]',
-    size: 'w-24 sm:w-32',
+    pos: 'top-[38%] left-[14%] sm:left-[17%]',
+    size: 'w-20 sm:w-28',
     z: 'z-15',
-    floatX: 14,
-    floatY: 18,
-    rot: 3
+    floatX: 10,
+    floatY: 14,
+    rot: 2
   },
   {
     id: 14,
     src: '/gallery/collage-SESS-E5734AEA.png',
-    pos: 'top-[35%] right-[16%] sm:right-[20%]',
-    size: 'w-24 sm:w-32',
+    pos: 'top-[38%] right-[14%] sm:right-[17%]',
+    size: 'w-20 sm:w-28',
     z: 'z-25',
-    floatX: -18,
-    floatY: -22,
+    floatX: -14,
+    floatY: -16,
     rot: -2
   },
   {
     id: 15,
     src: '/gallery/print-SESS-2101620F.png',
-    pos: 'top-1 left-[42%] sm:left-[45%]',
-    size: 'w-24 sm:w-32',
+    pos: 'top-[6%] left-[40%] sm:left-[42%]',
+    size: 'w-20 sm:w-28',
     z: 'z-30',
-    floatX: 12,
-    floatY: -26,
+    floatX: 8,
+    floatY: -18,
     rot: 1
   },
   {
     id: 16,
     src: '/gallery/print-SESS-D47C0100.png',
-    pos: 'bottom-2 left-[42%] sm:left-[45%]',
-    size: 'w-24 sm:w-32',
+    pos: 'bottom-[6%] left-[40%] sm:left-[42%]',
+    size: 'w-20 sm:w-28',
     z: 'z-30',
-    floatX: -14,
-    floatY: 24,
+    floatX: -10,
+    floatY: 18,
     rot: -1
   },
   {
     id: 17,
     src: '/gallery/print-SESS-F84DC24F.png',
     pos: 'top-1/2 left-[50%] -translate-x-1/2 -translate-y-1/2',
-    size: 'w-24 sm:w-32 opacity-40 hover:opacity-100',
+    size: 'w-20 sm:w-28 opacity-40 hover:opacity-100',
     z: 'z-10',
-    floatX: 10,
-    floatY: -10,
+    floatX: 8,
+    floatY: -8,
     rot: 0
   }
 ];
@@ -186,15 +186,15 @@ export const GallerySection: React.FC = () => {
     const ctx = gsap.context(() => {
       const tiles = gsap.utils.toArray('.mosaic-tile');
       
-      // Infinite organic floating, rotating, and scaling animation loop for all 17 items
+      // Infinite organic floating, rotating, and scaling animation loop
       tiles.forEach((tile: any, idx: number) => {
         const item = mosaicTiles[idx] || mosaicTiles[0];
         gsap.to(tile, {
           y: item.floatY,
           x: item.floatX,
           rotation: item.rot,
-          scale: 1.04,
-          duration: 3 + (idx % 4) * 0.7,
+          scale: 1.03,
+          duration: 3.2 + (idx % 4) * 0.6,
           repeat: -1,
           yoyo: true,
           ease: 'sine.easeInOut',
@@ -212,10 +212,10 @@ export const GallerySection: React.FC = () => {
         const deltaY = (e.clientY - centerY) / (rect.height / 2);
 
         tiles.forEach((tile: any, idx: number) => {
-          const depth = (idx % 4 + 1) * 10;
+          const depth = (idx % 4 + 1) * 8;
           gsap.to(tile, {
-            x: `+=${deltaX * depth * 0.35}`,
-            y: `+=${deltaY * depth * 0.35}`,
+            x: `+=${deltaX * depth * 0.25}`,
+            y: `+=${deltaY * depth * 0.25}`,
             duration: 1.2,
             ease: 'power1.out',
             overwrite: 'auto'
@@ -246,12 +246,12 @@ export const GallerySection: React.FC = () => {
           </h2>
         </div>
 
-        {/* Floating Scatter Cluster Area - All 17 Photos Floating Organically */}
+        {/* Floating Scatter Cluster Area - Height expanded and ample padding so no photo is cut off */}
         <div
           ref={clusterRef}
-          className="relative w-full h-[620px] sm:h-[720px] bg-white flex items-center justify-center p-4 overflow-hidden"
+          className="relative w-full h-[680px] sm:h-[780px] bg-white flex items-center justify-center p-8 overflow-hidden"
         >
-          {/* Floating Photos with Organic Movement & Rotation */}
+          {/* Floating Photos with Safe Positioning - 100% Unclipped */}
           {mosaicTiles.map((tile) => (
             <div
               key={tile.id}
