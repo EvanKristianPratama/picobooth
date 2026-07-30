@@ -186,6 +186,17 @@ export const ServicesSection: React.FC = () => {
           </div>
 
         </div>
+
+        {/* Profit Sharing Notice */}
+        <div className="mt-12 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-6 py-5 rounded-2xl bg-zinc-50 border border-black/10">
+          <span className="text-3xl">😊</span>
+          <p className="text-[#0d0d0d]/80 text-sm sm:text-base font-sans leading-relaxed text-center sm:text-left">
+            If you don't have enough money yet to rent out a booth, don't worry —{' '}
+            <span className="font-bold text-[#0d0d0d]">we can offer a profit sharing program</span>{' '}
+            so you can still get started together with us.
+          </p>
+        </div>
+
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ const differentiators = [
     number: '02',
     title: 'Full Customize Hardware',
     description: 'From shell design to print layout, every Pico unit is built and tailored to match your event identity. No cookie-cutter setups — pure bespoke.',
-    image: '/usp/IMG_2693_3.jpg',
+    image: '/usp/Tangkapan Layar 2026-07-30 pukul 13.49.36.png',
     tag: 'Bespoke Build'
   },
   {
