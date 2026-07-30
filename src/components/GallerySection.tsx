@@ -241,9 +241,17 @@ export const GallerySection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Title */}
         <div className="mb-16">
-          <h2 className="text-3xl sm:text-5xl font-sans font-bold text-[#0d0d0d] tracking-tight text-center sm:text-left">
-            Let's Make Memories Last Forever
+          <h2 className="text-3xl sm:text-5xl font-sans font-bold text-[#0d0d0d] tracking-tight text-center sm:text-left leading-tight">
+            Let's Make Memories{' '}
+            <span className="relative inline-block">
+              <span className="relative z-10">Last Forever</span>
+              <span
+                className="absolute bottom-1 left-0 w-full h-3 sm:h-4 bg-[#c5f737] rounded-sm -z-0"
+                style={{ bottom: '2px' }}
+              />
+            </span>
           </h2>
+          <div className="mt-4 w-16 h-1 bg-[#c5f737] rounded-full sm:mx-0 mx-auto" />
         </div>
 
         {/* Floating Scatter Cluster Area - Height expanded and ample padding so no photo is cut off */}
