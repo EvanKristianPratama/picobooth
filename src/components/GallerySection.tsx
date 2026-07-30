@@ -5,128 +5,115 @@ import { ArrowUpRight } from 'lucide-react';
 gsap.registerPlugin();
 
 const mosaicTiles = [
-  // --- FRONT / PROMINENT VENDOR EVENT PHOTOS (Foreground z-30 & z-40) ---
   {
     id: 1,
-    src: '/vendor/IMG_4280 2.PNG',
-    pos: 'top-4 left-[6%] sm:left-[10%]',
-    size: 'w-36 sm:w-52',
-    z: 'z-30',
-    floatX: -20,
+    src: '/gallery/collage-SESS-4604D05B.png',
+    pos: 'top-2 left-[5%] sm:left-[10%]',
+    size: 'w-28 sm:w-40',
+    z: 'z-10',
+    floatX: -18,
     floatY: -22,
-    rot: -4
-  },
-  {
-    id: 2,
-    src: '/vendor/IMG_4281.PNG',
-    pos: 'top-2 right-[6%] sm:right-[10%]',
-    size: 'w-36 sm:w-52',
-    z: 'z-40',
-    floatX: 22,
-    floatY: -20,
-    rot: 5
-  },
-  {
-    id: 3,
-    src: '/vendor/IMG_4282.PNG',
-    pos: 'bottom-[4%] left-[6%] sm:left-[10%]',
-    size: 'w-36 sm:w-56',
-    z: 'z-30',
-    floatX: -24,
-    floatY: 20,
-    rot: 3
-  },
-  {
-    id: 4,
-    src: '/vendor/IMG_4283.PNG',
-    pos: 'bottom-[2%] right-[6%] sm:right-[10%]',
-    size: 'w-36 sm:w-56',
-    z: 'z-40',
-    floatX: 25,
-    floatY: 22,
     rot: -5
   },
   {
-    id: 5,
-    src: '/vendor/IMG_4284.PNG',
-    pos: 'top-8 left-[32%] sm:left-[36%]',
-    size: 'w-32 sm:w-48',
-    z: 'z-35',
-    floatX: 16,
-    floatY: -25,
-    rot: -3
-  },
-  {
-    id: 6,
-    src: '/vendor/IMG_4285.PNG',
-    pos: 'top-6 right-[30%] sm:right-[34%]',
-    size: 'w-32 sm:w-48',
-    z: 'z-35',
-    floatX: -18,
-    floatY: -22,
+    id: 2,
+    src: '/gallery/print-SESS-2101620F.png',
+    pos: 'top-0 right-[5%] sm:right-[10%]',
+    size: 'w-32 sm:w-44',
+    z: 'z-20',
+    floatX: 20,
+    floatY: -24,
     rot: 4
   },
-
-  // --- FLOATING GALLERY PHOTOSTRIP PRINTS (Midground & Background z-10 to z-25) ---
   {
-    id: 7,
-    src: '/gallery/collage-SESS-4604D05B.png',
-    pos: 'top-1/3 left-[2%] sm:left-[4%]',
-    size: 'w-28 sm:w-36',
+    id: 3,
+    src: '/gallery/collage-SESS-543B1A7A (1).png',
+    pos: 'top-1/4 left-[2%] sm:left-[4%]',
+    size: 'w-28 sm:w-40',
     z: 'z-15',
-    floatX: -18,
-    floatY: 16,
+    floatX: -24,
+    floatY: 18,
     rot: 6
   },
   {
-    id: 8,
-    src: '/gallery/print-SESS-2101620F.png',
-    pos: 'top-1/3 right-[2%] sm:right-[4%]',
-    size: 'w-28 sm:w-36',
-    z: 'z-20',
-    floatX: 20,
-    floatY: 18,
-    rot: -6
-  },
-  {
-    id: 9,
-    src: '/gallery/collage-SESS-543B1A7A (1).png',
-    pos: 'bottom-[8%] left-[26%] sm:left-[30%]',
-    size: 'w-28 sm:w-36',
-    z: 'z-25',
-    floatX: -14,
-    floatY: 24,
-    rot: 3
-  },
-  {
-    id: 10,
+    id: 4,
     src: '/gallery/print-SESS-D47C0100.png',
-    pos: 'bottom-[6%] right-[26%] sm:right-[29%]',
-    size: 'w-28 sm:w-36',
-    z: 'z-20',
-    floatX: 16,
+    pos: 'top-1/3 right-[3%] sm:right-[5%]',
+    size: 'w-32 sm:w-44',
+    z: 'z-25',
+    floatX: 22,
     floatY: 20,
     rot: -4
   },
   {
-    id: 11,
+    id: 5,
     src: '/gallery/print-SESS-F84DC24F.png',
-    pos: 'bottom-[25%] left-[16%] sm:left-[20%]',
-    size: 'w-28 sm:w-36',
-    z: 'z-10',
-    floatX: -22,
-    floatY: -16,
-    rot: -2
+    pos: 'bottom-[8%] left-[25%] sm:left-[28%]',
+    size: 'w-32 sm:w-40',
+    z: 'z-30',
+    floatX: -15,
+    floatY: 25,
+    rot: 3
   },
   {
-    id: 12,
+    id: 6,
     src: '/gallery/collage-SESS-57B583C8.png',
-    pos: 'bottom-[22%] right-[16%] sm:right-[20%]',
-    size: 'w-28 sm:w-36',
-    z: 'z-15',
+    pos: 'bottom-[6%] right-[25%] sm:right-[28%]',
+    size: 'w-28 sm:w-40',
+    z: 'z-10',
     floatX: 18,
+    floatY: -20,
+    rot: -6
+  },
+  {
+    id: 7,
+    src: '/gallery/collage-SESS-763AA4D9.png',
+    pos: 'bottom-[4%] left-[4%] sm:left-[8%]',
+    size: 'w-32 sm:w-44',
+    z: 'z-20',
+    floatX: -26,
     floatY: -18,
     rot: 4
+  },
+  {
+    id: 8,
+    src: '/gallery/collage-SESS-8A231389.png',
+    pos: 'bottom-[2%] right-[4%] sm:right-[8%]',
+    size: 'w-32 sm:w-44',
+    z: 'z-15',
+    floatX: 24,
+    floatY: 22,
+    rot: -3
+  },
+  {
+    id: 9,
+    src: '/gallery/collage-SESS-8BC8DD36.png',
+    pos: 'top-4 left-[28%] sm:left-[32%]',
+    size: 'w-32 sm:w-44',
+    z: 'z-10',
+    floatX: 15,
+    floatY: -25,
+    rot: 5
+  },
+  {
+    id: 10,
+    src: '/gallery/collage-SESS-A4276AD3.png',
+    pos: 'top-2 right-[26%] sm:right-[30%]',
+    size: 'w-32 sm:w-44',
+    z: 'z-20',
+    floatX: -20,
+    floatY: 20,
+    rot: -5
+  },
+  {
+    id: 11,
+    src: '/gallery/collage-SESS-E5734AEA.png',
+    pos: 'bottom-[22%] left-[14%] sm:left-[18%]',
+    size: 'w-32 sm:w-44',
+    z: 'z-25',
+    floatX: -16,
+    floatY: -20,
+    rot: 2
   }
 ];
 
@@ -198,12 +185,12 @@ export const GallerySection: React.FC = () => {
           </h2>
         </div>
 
-        {/* Floating Scatter Cluster Area - Vendor Photos in Front + Gallery Prints Floating Around */}
+        {/* Floating Scatter Cluster Area - Interactive Float & Zero-Gravity Physics */}
         <div
           ref={clusterRef}
-          className="relative w-full h-[600px] sm:h-[680px] bg-white flex items-center justify-center p-4 overflow-hidden"
+          className="relative w-full h-[580px] sm:h-[660px] bg-white flex items-center justify-center p-4 overflow-hidden"
         >
-          {/* Floating Photos */}
+          {/* Floating Photos with Organic Movement & Rotation */}
           {mosaicTiles.map((tile) => (
             <div
               key={tile.id}
@@ -211,7 +198,7 @@ export const GallerySection: React.FC = () => {
             >
               <img
                 src={tile.src}
-                alt="Pico photobooth memory photo"
+                alt="Pico photobooth gallery print photo"
                 className="w-full h-auto object-contain filter drop-shadow-xl group-hover:drop-shadow-2xl transition-all"
               />
             </div>
