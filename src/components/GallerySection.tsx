@@ -5,11 +5,10 @@ import { ArrowUpRight } from 'lucide-react';
 gsap.registerPlugin();
 
 const mosaicTiles = [
-  // Gallery PNG Photo Prints
   {
     id: 1,
-    src: '/gallery/collage-SESS-75E4AEE7.png',
-    pos: 'top-2 left-[5%] sm:left-[12%]',
+    src: '/gallery/collage-SESS-4604D05B.png',
+    pos: 'top-2 left-[5%] sm:left-[10%]',
     size: 'w-28 sm:w-40',
     z: 'z-10',
     floatX: -18,
@@ -28,9 +27,9 @@ const mosaicTiles = [
   },
   {
     id: 3,
-    src: '/gallery/collage-SESS-A2766F4B.png',
-    pos: 'top-1/4 left-[2%] sm:left-[5%]',
-    size: 'w-28 sm:w-36',
+    src: '/gallery/collage-SESS-543B1A7A (1).png',
+    pos: 'top-1/4 left-[2%] sm:left-[4%]',
+    size: 'w-28 sm:w-40',
     z: 'z-15',
     floatX: -24,
     floatY: 18,
@@ -39,7 +38,7 @@ const mosaicTiles = [
   {
     id: 4,
     src: '/gallery/print-SESS-D47C0100.png',
-    pos: 'top-1/3 right-[3%] sm:right-[6%]',
+    pos: 'top-1/3 right-[3%] sm:right-[5%]',
     size: 'w-32 sm:w-44',
     z: 'z-25',
     floatX: 22,
@@ -49,7 +48,7 @@ const mosaicTiles = [
   {
     id: 5,
     src: '/gallery/print-SESS-F84DC24F.png',
-    pos: 'bottom-[8%] left-[25%] sm:left-[30%]',
+    pos: 'bottom-[8%] left-[25%] sm:left-[28%]',
     size: 'w-32 sm:w-40',
     z: 'z-30',
     floatX: -15,
@@ -58,21 +57,19 @@ const mosaicTiles = [
   },
   {
     id: 6,
-    src: '/gallery/print-SESS-63A9FF58.png',
+    src: '/gallery/collage-SESS-57B583C8.png',
     pos: 'bottom-[6%] right-[25%] sm:right-[28%]',
-    size: 'w-28 sm:w-36',
+    size: 'w-28 sm:w-40',
     z: 'z-10',
     floatX: 18,
     floatY: -20,
     rot: -6
   },
-
-  // Vendor PNG Real Event Photos
   {
     id: 7,
-    src: '/vendor/IMG_4280 2.PNG',
+    src: '/gallery/collage-SESS-763AA4D9.png',
     pos: 'bottom-[4%] left-[4%] sm:left-[8%]',
-    size: 'w-36 sm:w-52',
+    size: 'w-32 sm:w-44',
     z: 'z-20',
     floatX: -26,
     floatY: -18,
@@ -80,9 +77,9 @@ const mosaicTiles = [
   },
   {
     id: 8,
-    src: '/vendor/IMG_4281.PNG',
+    src: '/gallery/collage-SESS-8A231389.png',
     pos: 'bottom-[2%] right-[4%] sm:right-[8%]',
-    size: 'w-36 sm:w-52',
+    size: 'w-32 sm:w-44',
     z: 'z-15',
     floatX: 24,
     floatY: 22,
@@ -90,8 +87,8 @@ const mosaicTiles = [
   },
   {
     id: 9,
-    src: '/vendor/IMG_4282.PNG',
-    pos: 'top-4 left-[30%] sm:left-[34%]',
+    src: '/gallery/collage-SESS-8BC8DD36.png',
+    pos: 'top-4 left-[28%] sm:left-[32%]',
     size: 'w-32 sm:w-44',
     z: 'z-10',
     floatX: 15,
@@ -100,8 +97,8 @@ const mosaicTiles = [
   },
   {
     id: 10,
-    src: '/vendor/IMG_4283.PNG',
-    pos: 'top-2 right-[28%] sm:right-[32%]',
+    src: '/gallery/collage-SESS-A4276AD3.png',
+    pos: 'top-2 right-[26%] sm:right-[30%]',
     size: 'w-32 sm:w-44',
     z: 'z-20',
     floatX: -20,
@@ -110,23 +107,13 @@ const mosaicTiles = [
   },
   {
     id: 11,
-    src: '/vendor/IMG_4284.PNG',
-    pos: 'bottom-[25%] left-[16%] sm:left-[20%]',
+    src: '/gallery/collage-SESS-E5734AEA.png',
+    pos: 'bottom-[22%] left-[14%] sm:left-[18%]',
     size: 'w-32 sm:w-44',
     z: 'z-25',
     floatX: -16,
     floatY: -20,
     rot: 2
-  },
-  {
-    id: 12,
-    src: '/vendor/IMG_4285.PNG',
-    pos: 'bottom-[22%] right-[16%] sm:right-[20%]',
-    size: 'w-32 sm:w-44',
-    z: 'z-20',
-    floatX: 20,
-    floatY: -16,
-    rot: -4
   }
 ];
 
@@ -211,7 +198,7 @@ export const GallerySection: React.FC = () => {
             >
               <img
                 src={tile.src}
-                alt="Pico photobooth memory photo"
+                alt="Pico photobooth gallery print photo"
                 className="w-full h-auto object-contain filter drop-shadow-xl group-hover:drop-shadow-2xl transition-all"
               />
             </div>
