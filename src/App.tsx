@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { ServicesSection } from './components/ServicesSection';
+import { USPSection } from './components/USPSection';
 import { ClientsSection } from './components/ClientsSection';
 import { GallerySection } from './components/GallerySection';
 import { BookingModal } from './components/BookingModal';
@@ -37,6 +38,7 @@ export const App: React.FC = () => {
         />
         <AboutSection />
         <ServicesSection />
+        <USPSection />
         <ClientsSection />
         <GallerySection />
       </main>
