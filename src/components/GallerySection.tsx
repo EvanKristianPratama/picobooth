@@ -242,7 +242,7 @@ export const GallerySection: React.FC = () => {
         {/* Section Title */}
         <div className="mb-16">
           <h2 className="text-3xl sm:text-5xl font-sans font-bold text-[#0d0d0d] tracking-tight text-center sm:text-left">
-            Let's bring memory to last forever to people around us
+            Let's Make Memories Last Forever
           </h2>
         </div>
 
