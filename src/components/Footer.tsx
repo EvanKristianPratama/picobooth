@@ -54,9 +54,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             <ul className="space-y-2 text-sm text-[#0d0d0d]/80 font-medium">
               <li><a href="#home" className="hover:text-black transition-colors">Home</a></li>
               <li><a href="#about" className="hover:text-black transition-colors">About Us</a></li>
-              <li><a href="#services" className="hover:text-black transition-colors">What We Offer</a></li>
+              <li><a href="#services" className="hover:text-black transition-colors">Layanan & Harga</a></li>
               <li><a href="#clients" className="hover:text-black transition-colors">Our Clients</a></li>
               <li><a href="#gallery" className="hover:text-black transition-colors">Gallery</a></li>
+              <li><a href="#articles" className="hover:text-black transition-colors">Artikel & Panduan</a></li>
+              <li><a href="#faq" className="hover:text-black transition-colors">FAQ</a></li>
             </ul>
           </div>
 

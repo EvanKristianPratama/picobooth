@@ -31,9 +31,15 @@ export const ServicesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-[#0d0d0d] text-xs font-mono font-bold uppercase tracking-wider mb-3">
+            Layanan Utama Pico Booth
+          </div>
           <h2 className="text-3xl sm:text-5xl font-sans font-bold text-[#0d0d0d] tracking-tight">
-            What We Offer
+            Sewa Photobooth, Software Murah & Paket Usaha
           </h2>
+          <p className="mt-2 text-zinc-600 text-base sm:text-lg max-w-2xl font-light">
+            Ekosistem photobooth terlengkap di Indonesia dari manufaktur mesin komersial, persewaan event wedding, hingga software cloud.
+          </p>
         </div>
 
         {/* 3 Main Service Cards Grid - Crisp White Background & High Contrast Solid Black Text */}
@@ -45,7 +51,7 @@ export const ServicesSection: React.FC = () => {
               {/* Header Tag */}
               <div className="mb-6">
                 <span className="text-xs font-mono font-extrabold tracking-widest text-[#0d0d0d] uppercase">
-                  01 / MANUFACTURING
+                  01 / PAKET USAHA
                 </span>
               </div>
 
@@ -53,37 +59,37 @@ export const ServicesSection: React.FC = () => {
               <div className="w-full h-48 mb-6 flex items-center justify-center overflow-hidden rounded-2xl bg-zinc-50 border border-black/10 p-2">
                 <img
                   src="/booth/3.png"
-                  alt="Pico Photobooth Manufacturing Hardware"
+                  alt="Paket Usaha Mesin Photobooth Komersial"
                   className="w-full h-full object-contain filter contrast-105 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
 
               {/* Large Title */}
-              <h3 className="text-3xl sm:text-4xl font-sans font-black text-[#0d0d0d] tracking-tight mb-3">
-                Manufacturing
+              <h3 className="text-2xl sm:text-3xl font-sans font-black text-[#0d0d0d] tracking-tight mb-3">
+                Paket Usaha Photobooth
               </h3>
 
               {/* Pricing Hook - 79jt (Red Coret 90jt) */}
               <div className="mb-4 flex items-baseline gap-2">
-                <span className="text-xs font-mono uppercase tracking-wider text-[#0d0d0d] font-bold">Start from</span>
+                <span className="text-xs font-mono uppercase tracking-wider text-[#0d0d0d] font-bold">Mulai dari</span>
                 <span className="text-3xl font-sans font-black text-[#0d0d0d]">79jt</span>
                 <span className="text-base font-sans font-bold text-red-600 line-through">90jt</span>
               </div>
 
               {/* Hook Copy */}
               <p className="text-sm sm:text-base text-[#0d0d0d] font-sans leading-relaxed mb-8">
-                You can get <strong className="font-black text-black underline decoration-[#c5f737] decoration-4 underline-offset-4">up to 30jt per month</strong> revenue opportunity with our custom-built, commercial-grade photobooth hardware.
+                Raih potensi keuntungan <strong className="font-black text-black underline decoration-[#c5f737] decoration-4 underline-offset-4">hingga 30jt per bulan</strong> dengan mesin photobooth komersial kokoh, software bawaan, dan pelatihan bisnis siap pakai.
               </p>
             </div>
 
             {/* CTA Link */}
             <a
-              href={`${whatsappBaseUrl}?text=Halo%20Pico%20Strips,%20saya%20tertarik%20inquiry%20Manufacturing%20Photobooth%20Hardware%20(79jt)`}
+              href={`${whatsappBaseUrl}?text=Halo%20Pico%20Strips,%20saya%20tertarik%20inquiry%20Paket%20Usaha%20Photobooth%20(79jt)`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-3.5 px-6 rounded-full bg-[#0d0d0d] text-white font-mono font-bold text-xs flex items-center justify-between hover:bg-black hover:scale-102 transition-all shadow-md group-hover:bg-[#ff4d00]"
             >
-              <span>INQUIRE HARDWARE</span>
+              <span>KONSULTASI USAHA</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
@@ -94,7 +100,7 @@ export const ServicesSection: React.FC = () => {
               {/* Header Tag */}
               <div className="mb-6">
                 <span className="text-xs font-mono font-extrabold tracking-widest text-[#0d0d0d] uppercase">
-                  02 / EVENT RENTAL
+                  02 / SEWA PHOTOBOOTH
                 </span>
               </div>
 
@@ -102,36 +108,36 @@ export const ServicesSection: React.FC = () => {
               <div className="w-full h-48 mb-6 flex items-center justify-center overflow-hidden rounded-2xl bg-zinc-50 border border-black/10 p-2">
                 <img
                   src="/booth/2.png"
-                  alt="Pico Photobooth Event Rental Setup"
+                  alt="Jasa Sewa Photobooth Event dan Wedding"
                   className="w-full h-full object-contain filter contrast-105 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
 
               {/* Large Title */}
-              <h3 className="text-3xl sm:text-4xl font-sans font-black text-[#0d0d0d] tracking-tight mb-3">
-                Event Rental
+              <h3 className="text-2xl sm:text-3xl font-sans font-black text-[#0d0d0d] tracking-tight mb-3">
+                Sewa Photobooth Event
               </h3>
 
               {/* Pricing Hook - 999k */}
               <div className="mb-4 flex items-baseline gap-2">
-                <span className="text-xs font-mono uppercase tracking-wider text-[#0d0d0d] font-bold">Start from</span>
+                <span className="text-xs font-mono uppercase tracking-wider text-[#0d0d0d] font-bold">Mulai dari</span>
                 <span className="text-3xl font-sans font-black text-[#0d0d0d]">999k</span>
               </div>
 
               {/* Hook Copy */}
               <p className="text-sm sm:text-base text-[#0d0d0d] font-sans leading-relaxed mb-8">
-                You will get <strong className="font-black text-black">full experience for your event</strong> with ultra-fast thermal receipt prints, 4R studio photos, and instant QR cloud gallery.
+                Jasa sewa photobooth <strong className="font-black text-black">lengkap untuk wedding & event</strong> dengan cetak thermal receipt super cepat 3 detik, studio 4R glossy, operator, dan instant QR cloud gallery.
               </p>
             </div>
 
             {/* CTA Link - Book Now WhatsApp */}
             <a
-              href={`${whatsappBaseUrl}?text=Halo%20Pico%20Strips,%20saya%20ingin%20Book%20Now%20untuk%20Event%20Rental%20(999k)`}
+              href={`${whatsappBaseUrl}?text=Halo%20Pico%20Strips,%20saya%20ingin%20Book%20Now%20untuk%20Sewa%20Photobooth%20Event%20(999k)`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-3.5 px-6 rounded-full bg-[#c5f737] text-[#0d0d0d] font-mono font-bold text-xs flex items-center justify-between hover:bg-[#b5f524] hover:scale-102 transition-all shadow-md"
             >
-              <span>BOOK NOW</span>
+              <span>SEWA SEKARANG</span>
               <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
             </a>
           </div>
@@ -150,26 +156,26 @@ export const ServicesSection: React.FC = () => {
               <div className="w-full h-48 mb-6 flex items-center justify-center overflow-hidden rounded-2xl bg-zinc-50 border border-black/10 p-1">
                 <img
                   src="/software/Tangkapan%20Layar%202026-07-14%20pukul%2023.58.56.png"
-                  alt="Pico Photobooth Software UI OS"
+                  alt="Software Photo Booth Murah Pico OS"
                   className="w-full h-full object-cover rounded-xl filter contrast-105 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
 
               {/* Large Title */}
-              <h3 className="text-3xl sm:text-4xl font-sans font-black text-[#0d0d0d] tracking-tight mb-3">
-                Software OS
+              <h3 className="text-2xl sm:text-3xl font-sans font-black text-[#0d0d0d] tracking-tight mb-3">
+                Software Photo Booth Murah
               </h3>
 
               {/* Pricing Hook - Only 5k per transaction */}
               <div className="mb-4 flex items-baseline gap-2">
                 <span className="text-xs font-mono uppercase tracking-wider text-[#0d0d0d] font-bold">Pay as you go</span>
-                <span className="text-xl font-sans font-bold text-[#0d0d0d]">Only 5k</span>
-                <span className="text-xs font-mono text-[#0d0d0d] font-bold">/ transaction</span>
+                <span className="text-xl font-sans font-bold text-[#0d0d0d]">Cuma 5k</span>
+                <span className="text-xs font-mono text-[#0d0d0d] font-bold">/ transaksi</span>
               </div>
 
               {/* Hook Copy */}
               <p className="text-sm sm:text-base text-[#0d0d0d] font-sans leading-relaxed mb-8">
-                You will get <strong className="font-black text-black">full software for your business</strong> including Duo multi-camera sync, custom frame designer, and live cloud analytics.
+                Software photobooth <strong className="font-black text-black">tanpa biaya langganan bulanan mahal</strong>. Didukung Duo multi-kamera sync, drag-and-drop frame designer, dan live cloud analytics.
               </p>
             </div>
 
@@ -180,7 +186,7 @@ export const ServicesSection: React.FC = () => {
               rel="noopener noreferrer"
               className="w-full py-3.5 px-6 rounded-full bg-[#0d0d0d] text-white font-mono font-bold text-xs flex items-center justify-between hover:bg-black hover:scale-102 transition-all shadow-md group-hover:bg-[#ff4d00]"
             >
-              <span>DEMO</span>
+              <span>COBA DEMO SOFTWARE</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>

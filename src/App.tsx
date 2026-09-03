@@ -8,6 +8,8 @@ import { ServicesSection } from './components/ServicesSection';
 import { USPSection } from './components/USPSection';
 import { ClientsSection } from './components/ClientsSection';
 import { GallerySection } from './components/GallerySection';
+import { BlogSection } from './components/BlogSection';
+import { FAQSection } from './components/FAQSection';
 import { BookingModal } from './components/BookingModal';
 import { DemoModal } from './components/DemoModal';
 import { Footer } from './components/Footer';
@@ -41,6 +43,8 @@ export const App: React.FC = () => {
         <USPSection />
         <ClientsSection />
         <GallerySection />
+        <BlogSection />
+        <FAQSection />
       </main>
 
       {/* Footer */}

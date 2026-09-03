@@ -22,8 +22,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
         <img src="/logo_pico.png" alt="Pico Strips Logo" className="h-8 md:h-10 w-auto object-contain" />
       </a>
 
-      {/* Plain Text Navigation Links - Order: ABOUT, SERVICES, CLIENTS, GALLERY */}
-      <nav className="flex items-center gap-6 sm:gap-8 text-xs font-mono tracking-wider font-semibold text-[#0d0d0d]">
+      {/* Plain Text Navigation Links - Order: ABOUT, SERVICES, CLIENTS, GALLERY, ARTIKEL, FAQ */}
+      <nav className="flex items-center gap-5 sm:gap-7 text-xs font-mono tracking-wider font-semibold text-[#0d0d0d]">
         <a href="#about" className="hover:opacity-60 transition-opacity">
           ABOUT
         </a>
@@ -35,6 +35,12 @@ export const Navbar: React.FC<NavbarProps> = () => {
         </a>
         <a href="#gallery" className="hover:opacity-60 transition-opacity hidden sm:inline">
           GALLERY
+        </a>
+        <a href="#articles" className="hover:opacity-60 transition-opacity">
+          ARTIKEL
+        </a>
+        <a href="#faq" className="hover:opacity-60 transition-opacity hidden md:inline">
+          FAQ
         </a>
       </nav>
     </header>
