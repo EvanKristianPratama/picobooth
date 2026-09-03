@@ -46,7 +46,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ article, onBack, onSel
           </button>
 
           <a href="/" onClick={(e) => { e.preventDefault(); onBack(); }} className="flex items-center gap-2">
-            <img src="/logo_pico.png" alt="Pico Strips Logo" className="h-7 sm:h-8 w-auto object-contain" />
+            <img src="/logo_pico2.png" alt="Pico Strips Logo" className="h-7 sm:h-8 w-auto object-contain" />
           </a>
 
           <button

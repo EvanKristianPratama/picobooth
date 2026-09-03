@@ -17,7 +17,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-6">
             <a href="#home" className="flex items-center gap-3 hover:opacity-75 transition-opacity">
-              <img src="/logo_pico.png" alt="Pico Strips Logo" className="h-9 w-auto object-contain" />
+              <img src="/logo_pico2.png" alt="Pico Strips Logo" className="h-9 w-auto object-contain" />
             </a>
             <p className="text-[#0d0d0d]/70 text-sm max-w-md leading-relaxed font-normal">
               The clean, high-speed photobooth experience. Ultra-fast thermal receipt printing, 4R studio prints, and instant QR cloud gallery.
