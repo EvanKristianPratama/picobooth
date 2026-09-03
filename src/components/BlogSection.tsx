@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ArrowUpRight, BookOpen, Clock, Calendar } from 'lucide-react';
-import { articles, Article } from '../data/articles';
-import { ArticleModal } from './ArticleModal';
+import { articles } from '../data/articles';
 
-export const BlogSection: React.FC = () => {
-  const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
+interface BlogSectionProps {
+  onOpenArticle: (slug: string) => void;
+}
 
+export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenArticle }) => {
   return (
     <section id="articles" className="py-24 bg-zinc-50 text-[#0d0d0d] border-t border-black/10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -32,10 +33,16 @@ export const BlogSection: React.FC = () => {
         {/* 3 Clean Editorial Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {articles.map((article) => (
-            <article
+            <a
               key={article.id}
-              onClick={() => setSelectedArticle(article)}
-              className="group cursor-pointer rounded-3xl p-7 bg-white border border-black/15 shadow-sm hover:shadow-xl hover:border-black transition-all duration-300 flex flex-col justify-between"
+              href={`?article=${article.slug}`}
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && e.button === 0) {
+                  e.preventDefault();
+                  onOpenArticle(article.slug);
+                }
+              }}
+              className="group block rounded-3xl p-7 bg-white border border-black/15 shadow-sm hover:shadow-xl hover:border-black transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 {/* Image Preview */}
@@ -80,23 +87,17 @@ export const BlogSection: React.FC = () => {
               {/* Read More Trigger */}
               <div className="pt-4 border-t border-black/10 flex items-center justify-between">
                 <span className="text-xs font-mono font-bold text-[#0d0d0d] group-hover:underline underline-offset-4 flex items-center gap-1">
-                  BACA ARTIKEL
+                  BACA SELENGKAPNYA
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </span>
                 <span className="text-[11px] font-mono text-zinc-400">
-                  Pico Strips Insights
+                  Halaman Penuh
                 </span>
               </div>
-            </article>
+            </a>
           ))}
         </div>
       </div>
-
-      {/* Article Reader Modal */}
-      <ArticleModal
-        article={selectedArticle}
-        onClose={() => setSelectedArticle(null)}
-      />
     </section>
   );
 };
