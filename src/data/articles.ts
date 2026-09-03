@@ -71,7 +71,7 @@ export const articles: Article[] = [
         heading: 'Paket Sewa Photobooth Fleksibel di Pico Booth Mulai 999k',
         body: [
           'Pico Booth menawarkan paket sewa photobooth lengkap mulai dari Rp 999.000 dengan setup modern, pencahayaan profesional, live preview layar sentuh, dan sinkronisasi QR cloud real-time.',
-          'Tersedia juga opsi custom backdrop, branding booth khusus, dan operator berpengalaman siap melayani area Jabodetabek dan sekitarnya.'
+          'Tersedia juga opsi custom backdrop, branding booth khusus, dan operator berpengalaman siap melayani area Jabodetabek, Bandung, Jawa Barat, dan seluruh Indonesia.'
         ]
       }
     ],

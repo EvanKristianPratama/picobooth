@@ -25,7 +25,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: 'Di mana saja cakupan wilayah layanan sewa photobooth Pico Booth?',
-    answer: 'Layanan sewa photobooth kami beroperasi aktif di seluruh wilayah Jabodetabek (Jakarta, Bogor, Depok, Tangerang, Bekasi), Bandung, dan kota-kota besar lainnya di Indonesia dengan biaya akomodasi yang transparan.',
+    answer: 'Layanan sewa photobooth kami beroperasi aktif di seluruh wilayah Jabodetabek (Jakarta, Bogor, Depok, Tangerang, Bekasi), Bandung, Jawa Barat, dan seluruh Indonesia dengan biaya akomodasi yang transparan.',
     category: 'Sewa Photobooth'
   },
   {
