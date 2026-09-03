@@ -13,10 +13,6 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenArticle }) => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-black/5 border border-black/10 text-[#0d0d0d] text-xs font-mono font-bold uppercase tracking-wider mb-4">
-              <BookOpen className="w-3.5 h-3.5" />
-              <span>Artikel & Panduan SEO</span>
-            </div>
             <h2 className="text-3xl sm:text-5xl font-sans font-bold text-[#0d0d0d] tracking-tight">
               Wawasan & Panduan Photobooth
             </h2>
@@ -53,24 +49,13 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenArticle }) => {
                     className="w-full h-full object-contain filter contrast-105"
                     loading="lazy"
                   />
-                  <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1 rounded-full text-[11px] font-mono font-bold bg-[#c5f737] text-black shadow-sm">
-                      {article.category}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Meta info */}
-                <div className="flex items-center gap-3 text-xs font-mono text-zinc-500 mb-3">
-                  <span className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-zinc-400" />
-                    {article.publishDate}
-                  </span>
+                <div className="flex items-center gap-2 text-xs font-mono text-zinc-500 mb-3 uppercase tracking-wider font-semibold">
+                  <span className="text-[#0d0d0d] font-bold">{article.category}</span>
                   <span>•</span>
-                  <span className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5 text-zinc-400" />
-                    {article.readTime}
-                  </span>
+                  <span>{article.readTime}</span>
                 </div>
 
                 {/* Title */}

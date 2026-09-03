@@ -62,16 +62,11 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ article, onBack, onSel
       {/* Main Wide Article Container */}
       <main className="max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-20">
         {/* Category & Meta */}
-        <div className="mb-6 flex flex-wrap items-center gap-3">
-          <span className="px-3.5 py-1 rounded-full text-xs font-mono font-bold bg-[#c5f737] text-black shadow-sm">
-            {article.category}
-          </span>
-          <span className="text-xs font-mono text-zinc-500">
-            • {article.readTime}
-          </span>
-          <span className="text-xs font-mono text-zinc-500 hidden sm:inline">
-            • Diperbarui {article.publishDate}
-          </span>
+        <div className="mb-6 flex flex-wrap items-center gap-2 text-xs font-mono text-zinc-500 uppercase tracking-widest font-semibold">
+          <span className="text-[#0d0d0d] font-bold">{article.category}</span>
+          <span>•</span>
+          <span>{article.readTime}</span>
+          <span className="hidden sm:inline">• Diperbarui {article.publishDate}</span>
         </div>
 
         {/* Big Wide Headline */}
@@ -161,10 +156,9 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ article, onBack, onSel
         {/* Wide Bottom Conversion CTA Card */}
         <div className="mt-16 rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-zinc-950 via-zinc-900 to-black text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl border border-white/10">
           <div className="space-y-2 text-center md:text-left max-w-xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-mono font-bold text-zinc-300 uppercase tracking-wider mb-2">
-              <BookOpen className="w-3.5 h-3.5 text-[#c5f737]" />
-              <span>Solusi Langsung</span>
-            </div>
+            <span className="text-xs font-mono font-bold text-zinc-400 uppercase tracking-widest block mb-2">
+              KONSULTASI BISNIS &amp; EVENT
+            </span>
             <h3 className="text-2xl sm:text-3xl font-bold tracking-tight">
               Tertarik Menggunakan Layanan Pico Booth?
             </h3>
@@ -199,8 +193,8 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ article, onBack, onSel
                   className="group cursor-pointer rounded-3xl p-7 bg-zinc-50 border border-black/10 hover:border-black hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
-                    <div className="flex items-center gap-2 text-xs font-mono text-zinc-500 mb-3">
-                      <span className="px-2.5 py-0.5 rounded bg-[#c5f737] text-black font-bold">
+                    <div className="flex items-center gap-2 text-xs font-mono text-zinc-500 mb-3 uppercase tracking-wider font-semibold">
+                      <span className="font-bold text-[#0d0d0d]">
                         {rel.category}
                       </span>
                       <span>•</span>

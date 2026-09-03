@@ -47,10 +47,6 @@ export const FAQSection: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-black/5 text-zinc-800 text-xs font-mono font-bold uppercase tracking-wider mb-4">
-            <HelpCircle className="w-3.5 h-3.5 text-zinc-600" />
-            <span>FAQ & Bantuan</span>
-          </div>
           <h2 className="text-3xl sm:text-5xl font-sans font-bold text-[#0d0d0d] tracking-tight">
             Pertanyaan yang Sering Diajukan
           </h2>
@@ -75,14 +71,9 @@ export const FAQSection: React.FC = () => {
                   className="w-full py-5 px-6 sm:px-8 flex items-center justify-between text-left gap-4"
                   aria-expanded={isOpen}
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs font-mono font-bold px-2.5 py-1 rounded bg-[#c5f737] text-black shrink-0 hidden sm:inline-block">
-                      {faq.category}
-                    </span>
-                    <span className="text-base sm:text-lg font-sans font-bold text-[#0d0d0d]">
-                      {faq.question}
-                    </span>
-                  </div>
+                  <span className="text-base sm:text-lg font-sans font-bold text-[#0d0d0d]">
+                    {faq.question}
+                  </span>
                   <div className="p-1 rounded-full bg-black/5 text-black shrink-0">
                     {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </div>
